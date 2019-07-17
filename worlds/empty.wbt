@@ -1,0 +1,308 @@
+#VRML_SIM R2019a utf8
+WorldInfo {
+}
+Viewpoint {
+  orientation -0.025738790070880604 -0.9850555225602474 -0.17030305974716034 2.8460105158696725
+  position -0.3918209192205112 0.4377544841030331 -0.6747084902438076
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+Floor {
+}
+Robot {
+  translation 0 0.02 0
+  children [
+    DEF GR_BASE Group {
+      children [
+        Shape {
+          appearance DEF A_GREY PBRAppearance {
+            baseColor 0.7294117647058823 0.7411764705882353 0.7137254901960784
+            roughness 1
+            metalness 0
+          }
+          geometry Cylinder {
+            height 0.04
+            radius 0.075
+          }
+        }
+        Transform {
+          translation 0 0.0925 0
+          children [
+            Shape {
+              appearance USE A_GREY
+              geometry Cylinder {
+                height 0.145
+                radius 0.035
+              }
+            }
+          ]
+        }
+      ]
+    }
+    HingeJoint {
+      jointParameters HingeJointParameters {
+        axis 0 1 0
+        anchor 0 0.165 0
+        staticFriction 0.05
+      }
+      device [
+        RotationalMotor {
+          name "motorDC1"
+          maxVelocity 4.921828485
+          maxTorque 4.2168595
+        }
+        PositionSensor {
+          name "encoder1"
+        }
+      ]
+      endPoint Solid {
+        translation 0 0.167 0
+        children [
+          DEF GR_ONE Group {
+            children [
+              Shape {
+                appearance DEF A_GREY2 PBRAppearance {
+                  baseColor 0.5333333333333333 0.5411764705882353 0.5215686274509804
+                }
+                geometry Cylinder {
+                  height 0.004
+                  radius 0.035
+                }
+              }
+              Transform {
+                translation 0 0.0145 0
+                children [
+                  Shape {
+                    appearance USE A_GREY2
+                    geometry Box {
+                      size 0.05 0.025 0.07
+                    }
+                  }
+                ]
+              }
+              Transform {
+                translation 0 0.027 0.028
+                rotation 1 0 0 1.57
+                children [
+                  Shape {
+                    appearance USE A_GREY2
+                    geometry Cylinder {
+                      height 0.126
+                      radius 0.025
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+          HingeJoint {
+            jointParameters HingeJointParameters {
+              axis 0 0 1
+              anchor 0 0.027 0.098
+              staticFriction 0.05
+            }
+            device [
+              RotationalMotor {
+                name "motorDC2"
+                maxVelocity 4.921828485
+                maxTorque 4.2168595
+              }
+              PositionSensor {
+                name "encoder2"
+              }
+            ]
+            endPoint Solid {
+              translation 0 0.027 0.115
+              rotation 1 0 0 1.57
+              children [
+                DEF GR_TWO Group {
+                  children [
+                    Shape {
+                      appearance USE A_GREY
+                      geometry Cylinder {
+                        height 0.05
+                        radius 0.084
+                      }
+                    }
+                    Transform {
+                      translation -0.161 0 0
+                      children [
+                        Shape {
+                          appearance USE A_GREY
+                          geometry Cylinder {
+                            height 0.05
+                            radius 0.045
+                          }
+                        }
+                      ]
+                    }
+                    Transform {
+                      translation -0.0762 0 -0.034999999999999996
+                      rotation 0 1 0 0.25
+                      children [
+                        Shape {
+                          appearance USE A_GREY
+                          geometry DEF G_B Box {
+                            size 0.161 0.05 0.06
+                          }
+                        }
+                      ]
+                    }
+                    Transform {
+                      translation -0.0762 0 0.035
+                      rotation 0 1 0 -0.25
+                      children [
+                        Shape {
+                          appearance USE A_GREY
+                          geometry USE G_B
+                        }
+                      ]
+                    }
+                    Transform {
+                      translation -0.09999999999999999 0 0
+                      children [
+                        Shape {
+                          appearance USE A_GREY
+                          geometry Box {
+                            size 0.06 0.05 0.06
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+                HingeJoint {
+                  jointParameters HingeJointParameters {
+                    axis 0 1 0
+                    anchor -0.161 -0.04 0
+                    staticFriction 0.05
+                  }
+                  device [
+                    RotationalMotor {
+                      name "servoMotor1"
+                      maxTorque 1.1
+                    }
+                  ]
+                  endPoint Solid {
+                    translation -0.161 -0.0375 0
+                    rotation 0 1 0 1.57
+                    children [
+                      DEF GR_THREE Group {
+                        children [
+                          Shape {
+                            appearance USE A_GREY2
+                            geometry Cylinder {
+                              height 0.025
+                              radius 0.04
+                            }
+                          }
+                          Transform {
+                            translation -0.115 0 0
+                            children [
+                              Shape {
+                                appearance USE A_GREY2
+                                geometry Cylinder {
+                                  height 0.025
+                                  radius 0.025
+                                }
+                              }
+                            ]
+                          }
+                          Transform {
+                            translation -0.06 0 -0.0174
+                            rotation 0 1 0 0.157
+                            children [
+                              Shape {
+                                appearance USE A_GREY2
+                                geometry DEF G_B Box {
+                                  size 0.115 0.025 0.025
+                                }
+                              }
+                            ]
+                          }
+                          Transform {
+                            translation -0.06199666833293656 0 0.0174
+                            rotation 0 1 0 -0.157
+                            children [
+                              Shape {
+                                appearance USE A_GREY2
+                                geometry USE G_B
+                              }
+                            ]
+                          }
+                          Transform {
+                            translation -0.060000000000000005 0 0
+                            children [
+                              Shape {
+                                appearance USE A_GREY2
+                                geometry Box {
+                                  size 0.06 0.025 0.03
+                                }
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                      HingeJoint {
+                        jointParameters HingeJointParameters {
+                          anchor -0.14 0 0
+                          staticFriction 0.05
+                        }
+                        device [
+                          RotationalMotor {
+                            name "servoMotor2"
+                            maxTorque 0.18
+                          }
+                        ]
+                        endPoint Solid {
+                          translation -0.145 0 0
+                          rotation 1 0 0 0
+                          children [
+                            DEF GR_FOUR Group {
+                              children [
+                                Shape {
+                                  appearance USE A_GREY
+                                  geometry Box {
+                                    size 0.01 0.05 0.01
+                                  }
+                                }
+                              ]
+                            }
+                          ]
+                          boundingObject USE GR_FOUR
+                          physics Physics {
+                            density -1
+                            mass 0.005
+                          }
+                        }
+                      }
+                    ]
+                    boundingObject USE GR_THREE
+                    physics Physics {
+                      density -1
+                      mass 0.085
+                    }
+                  }
+                }
+              ]
+              boundingObject USE GR_TWO
+              physics Physics {
+                density -1
+                mass 0.435
+              }
+            }
+          }
+        ]
+        boundingObject USE GR_ONE
+        physics Physics {
+          density -1
+          mass 0.4
+        }
+      }
+    }
+  ]
+  boundingObject USE GR_BASE
+  controller "v_1"
+}

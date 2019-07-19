@@ -2,8 +2,8 @@
 WorldInfo {
 }
 Viewpoint {
-  orientation -0.025738790070880604 -0.9850555225602474 -0.17030305974716034 2.8460105158696725
-  position -0.3918209192205112 0.4377544841030331 -0.6747084902438076
+  orientation -0.03279174279451342 -0.9854836231797932 -0.16657349743859462 2.758347792246025
+  position -0.4886129658963383 0.39892542791761776 -0.7491537009309321
 }
 TexturedBackground {
 }
@@ -18,7 +18,7 @@ Robot {
       children [
         Shape {
           appearance DEF A_GREY PBRAppearance {
-            baseColor 0.7294117647058823 0.7411764705882353 0.7137254901960784
+            baseColor 0 0 0
             roughness 1
             metalness 0
           }
@@ -64,7 +64,7 @@ Robot {
             children [
               Shape {
                 appearance DEF A_GREY2 PBRAppearance {
-                  baseColor 0.5333333333333333 0.5411764705882353 0.5215686274509804
+                  baseColor 0 0 0
                 }
                 geometry Cylinder {
                   height 0.004
@@ -187,7 +187,7 @@ Robot {
                   ]
                   endPoint Solid {
                     translation -0.161 -0.0375 0
-                    rotation 0 1 0 1.57
+                    rotation 0 1 0 1.5700000000078604
                     children [
                       DEF GR_THREE Group {
                         children [

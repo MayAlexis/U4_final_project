@@ -1,0 +1,31 @@
+﻿Servomotor con torque de 11 Kgf/cm
+MOT-135
+    • Engranaje: Metálico 
+    • Torque: 11 kgf*cm 6V 
+    • Rotación: 180° 
+    • Entrada: 3,5 - 6 Vcc 100mA máx. 
+    • Temperatura de operación: -30° a 60° 
+    • Velocidad de operación: < 0,16 s 
+    • Conector tipo S compatible con receptores Futaba y JR 
+    • Peso: 55 gramos 
+    • Dimensiones: 40.7 x 19.7 x 42.9 mm
+
+Motor Dc Alto Par Torque 43 Kg 12v 47 Rpm Robot 24 Mm
+ESPECIFICACIONES TÉCNICAS:
+	*TORQUE: 43 KG
+	*VOLTAJE: 12 V
+	*RPM: 47
+	*DIAMETRO: 24 MM
+
+MEDIDAS APROXIMADAS DEL MOTOR: 7 CMS DE LARGO, 24 MM DE DIAMETRO, EL EJE MIDE APROX 1 CM Y SU DIAMETRO ES DE 4MM APROX. 
+
+Micro servomotor con torque de 1.8 Kgf/cm
+Torque de 1,8 kgf/cm a 5 Vcc
+    • Rotación de 180°
+    • Temperatura de operación: -30° a 60°
+    • Velocidad de operación: <0,1 s
+    • Conector tipo S compatible con receptores Futaba y JR
+    • Engranaje plástico
+    • Alimentación: 3,5 - 6 Vcc 20 mA
+
+

@@ -2,8 +2,8 @@
 WorldInfo {
 }
 Viewpoint {
-  orientation -0.03279174279451342 -0.9854836231797932 -0.16657349743859462 2.758347792246025
-  position -0.4886129658963383 0.39892542791761776 -0.7491537009309321
+  orientation 0.03229693775458743 -0.9780499443503133 -0.20585240870105254 3.4461169537153302
+  position 0.1782775947963287 0.4759781494739873 -0.588803309267334
 }
 TexturedBackground {
 }
@@ -187,7 +187,7 @@ Robot {
                   ]
                   endPoint Solid {
                     translation -0.161 -0.0375 0
-                    rotation 0 1 0 1.5700000000078604
+                    rotation 0 0.9999999999999999 0 4.71
                     children [
                       DEF GR_THREE Group {
                         children [
@@ -304,5 +304,5 @@ Robot {
     }
   ]
   boundingObject USE GR_BASE
-  controller "v_1"
+  controller "U4_final_project"
 }

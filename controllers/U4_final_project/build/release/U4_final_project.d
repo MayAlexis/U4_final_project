@@ -1,4 +1,4 @@
-build/release/v_1.o: v_1.c \
+build/release/U4_final_project.o: U4_final_project.c \
  /usr/local/webots/include/controller/c/webots/robot.h \
  /usr/local/webots/include/controller/c/webots/types.h \
  /usr/local/webots/include/controller/c/webots/nodes.h \
